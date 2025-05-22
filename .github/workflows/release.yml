@@ -172,7 +172,7 @@ jobs:
         run: |
           mv build_assets XrayR-$ASSET_NAME
       - name: Upload files to Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@984b53b16fb9cd2b0e6144db3fd199b75e771fe1
         with:
           name: XrayR-${{ steps.get_filename.outputs.ASSET_NAME }}
           path: |
