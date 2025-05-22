@@ -178,7 +178,7 @@ jobs:
           path: |
             ./XrayR-${{ steps.get_filename.outputs.ASSET_NAME }}/*
       - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v2
+        uses: svenstaro/upload-release-action@984b53b16fb9cd2b0e6144db3fd199b75e771fe1
         if: github.event_name == 'release'
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
