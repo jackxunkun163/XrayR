@@ -1,4 +1,4 @@
-module github.com/wyx2685/XrayR
+module github.com/jackxunkun163/XrayR
 
 go 1.23.1
 
