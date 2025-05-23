@@ -17,8 +17,8 @@ on:
       - "go.mod"
       - "go.sum"
       - ".github/workflows/*.yml"
-  release:
-    types: [ published ]
+#  release:
+#    types: [ published ]
 
 jobs:
 
