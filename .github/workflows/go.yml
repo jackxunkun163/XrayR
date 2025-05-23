@@ -140,6 +140,6 @@ jobs:
               curl -L "${DOWNLOAD_URL}" -o ./build_assets/${FILE_NAME}
             done
             DOWNLOAD_URL1="https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat"
-            curl -L "${DOWNLOAD_URL1}" -o ./build_assets/${dlc.dat}
+            curl -L "${DOWNLOAD_URL1}" -o ./build_assets/dlc.dat
 #      - name: Build
 #        run: go build -v ./...
