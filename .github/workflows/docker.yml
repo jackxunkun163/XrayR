@@ -1,8 +1,9 @@
 name: Publish Docker image
 on:
-  release:
-    types:
-      - published
+  workflow_dispatch:
+#  release:
+#    types:
+#      - published
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: jackxunkun163/xrayr
