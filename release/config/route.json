@@ -3,34 +3,13 @@
   "rules": [
     {
       "type": "field",
-      "outboundTag": "block",
-      "ip": [
-        "geoip:private"
-      ]
+      "outboundTag": "unlock", 
+      "domain": ["geosite:openai"] 
     },
     {
       "type": "field",
-      "outboundTag": "block",
-      "protocol": [
-        "bittorrent"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "socks5-warp",
-      "domain": []
-    },
-    {
-      "type": "field",
-      "outboundTag": "IPv6_out",
-      "domain": [
-        "geosite:netflix"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "IPv4_out",
-      "network": "udp,tcp"
+      "outboundTag": "gemini",
+      "domain": ["geosite:google-gemini"]
     }
   ]
 }
